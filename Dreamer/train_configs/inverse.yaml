@@ -1,0 +1,66 @@
+dmc: 
+
+  logdir: ./
+  video_dir: ./
+  debug: False
+  seed: 0
+  steps: 1000000.0
+  snapshot_every: 20000.0
+  eval_every: 5000.0
+  log_every: 5000.0
+  image_size: 64
+  log_scalars: true
+  log_images: false 
+  gpu_growth: true
+  precision: 16
+  task: dmc_cheetah_run_driving
+  envs: 1
+  parallel: none
+  action_repeat: 2
+  time_limit: 1000
+  prefill: 5000
+  eval_noise: 0.0
+  clip_rewards: none
+  deter_size: 283
+  stoch_size: 42
+  num_units: 400
+  dense_act: elu
+  cnn_act: relu
+  cnn_depth: 45
+  pcont: false
+  free_nats: 3.0
+  kl_scale: 1.0
+  pcont_scale: 10.0
+  weight_decay: 0.0
+  weight_decay_pattern: .*
+  batch_size: 50
+  batch_length: 50
+  train_every: 1000
+  train_steps: 100
+  pretrain: 100
+  model_lr: 0.0006
+  value_lr: 8.0e-05
+  actor_lr: 8.0e-05
+  grad_clip: 100.0
+  dataset_balance: false
+  discount: 0.99
+  disclam: 0.95
+  horizon: 15
+  action_dist: tanh_normal
+  action_init_std: 5.0
+  expl: additive_gaussian
+  expl_amount: 0.3
+  expl_decay: 0.0
+  expl_min: 0.0
+
+debug:
+
+  debug: True
+  pretrain: 1
+  prefill: 1
+  train_steps: 1
+  batch_size: 10
+  batch_length: 20
+
+
+
