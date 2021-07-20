@@ -16,17 +16,6 @@ ICML 2021 [[website]](https://xiangfu.co/tia) [[paper]](https://arxiv.org/abs/21
 
 The directory [Dreamer](./Dreamer) contains code for running DMC experiments. The directory [DreamerV2](./DreamerV2) contains code for running Atari experiments. This implementation is tested with Python 3.6, Tensorflow 2.3.1 and CUDA 10.1. The training/evaluation metrics used for producing the figures in the paper can be downloaded from [this Google Drive link](https://drive.google.com/file/d/1wvSp9Q7r2Ah5xRE_x3nJy-uwLkjF2RgX/view?usp=sharing).
 
-If you find this code useful, please consider citing:
-
-```
-@inproceedings{fu2021learning,
-    title={Learning Task Informed Abstractions},
-    author={Fu, Xiang and Yang, Ge and Agrawal, Pulkit and Jaakkola, Tommi},
-    booktitle={ICML},
-    year={2021}
-}
-```
-
 ## Getting started
 
 Get dependencies:
@@ -114,6 +103,27 @@ Both DMC and Atari experiments log with tensorboard by default. The decompositio
 tensorboard --logdir LOGDIR
 ```
 
+## Citation
+
+
+If you find this code useful, please consider citing our paper:
+
+```
+@InProceedings{fu2021learning,
+title = {Learning Task Informed Abstractions},
+author = {Fu, Xiang and Yang, Ge and Agrawal, Pulkit and Jaakkola, Tommi},
+booktitle = {Proceedings of the 38th International Conference on Machine Learning},
+pages = {3480--3491},
+year = {2021},
+editor = {Meila, Marina and Zhang, Tong},
+volume = {139},
+series = {Proceedings of Machine Learning Research},
+month = {18--24 Jul},
+publisher = {PMLR},
+pdf = {http://proceedings.mlr.press/v139/fu21b/fu21b.pdf},
+url = {http://proceedings.mlr.press/v139/fu21b.html}
+}
+```
 
 ## Reference
 
